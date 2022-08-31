@@ -6,17 +6,16 @@ const frase = "Jorge tem uma casa verde e com portão azul, com os dizeres: \"BO
 console.log(frase)
 
 //letra b)
-novaFrase = frase.replaceAll("verde", "rosa")
-novaFrase1 = novaFrase.replaceAll("azul", "laranja")
+novaFrase = frase.replaceAll("verde", "rosa").replaceAll("azul", "laranja")
 
-console.log(novaFrase1)
+console.log(novaFrase)
 
 //letra c)
-console.log(`A nova frase tem a palavra verde? ${novaFrase1.includes("verde")}`)
-console.log(`A nova frase tem a palavra laranja? ${novaFrase1.includes("laranja")}`)
+console.log(`A nova frase tem a palavra verde? ${novaFrase.includes("verde")}`)
+console.log(`A nova frase tem a palavra laranja? ${novaFrase.includes("laranja")}`)
 
 //EXTRA
 console.log(`Deixando em maiúsculo:
-${novaFrase1.replace("mas não deixe o gato sair", "MAS NÃO DEIXE O GATO SAIR")}
+${novaFrase.replace("mas não deixe o gato sair", "mas não deixe o gato sair".toUpperCase())}
 `)
 
